@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fractional COO for CPA firms that have outgrown partner-led operations. Improve leverage, clear bottlenecks, strengthen accountability, and turn growth into margin.">
+    <meta name="author" content="Elias Espinal, Axiom Advisory Partners">
+    <title>Axiom Advisory Partners | Fractional COO for CPA Firms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .font-display {
+            font-family: 'Space Grotesk', 'Inter', system_ui, sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+
+        .nav-link {
+            transition: color 0.1s ease;
+        }
+        
+        .nav-link:hover {
+            color: #0F766E;
+        }
+
+        .service-card {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                        box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .headshot {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- NAV -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center gap-x-3">
+                    <a href="index.html">
+                        <img src="axiom-logo.png" alt="Axiom Advisory Partners" class="h-20 w-auto">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#about" class="nav-link text-slate-600 hover:text-slate-900">About</a>
+                    <a href="#why" class="nav-link text-slate-600 hover:text-slate-900">Why Axiom</a>
+                    <a href="#offerings" class="nav-link text-slate-600 hover:text-slate-900">Offerings</a>
+                    <a href="#results" class="nav-link text-slate-600 hover:text-slate-900">Results</a>
+                    <a href="#process" class="nav-link text-slate-600 hover:text-slate-900">Process</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="#contact" 
+                       class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold bg-slate-900 hover:bg-black text-white rounded-2xl transition-colors">
+                        Book 30-Minute Strategy Call
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn"
+                        class="md:hidden w-10 h-10 flex items-center justify-center text-slate-600 hover:text-slate-900"
+                        aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm font-medium">
+                <a href="#about" class="py-1 text-slate-600">About</a>
+                <a href="#why" class="py-1 text-slate-600">Why Axiom</a>
+                <a href="#offerings" class="py-1 text-slate-600">Offerings</a>
+                <a href="#results" class="py-1 text-slate-600">Results</a>
+                <a href="#process" class="py-1 text-slate-600">Process</a>
+                <a href="#contact" class="mt-2 inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-slate-900 text-white rounded-2xl">
+                    Book 30-Minute Strategy Call
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="max-w-screen-xl mx-auto px-6 pt-8 pb-10">
+        <div class="max-w-4xl">
+            <!-- Badge moved below -->
+
+            <h1 class="font-display text-6xl md:text-7xl leading-[1.05] tracking-tighter font-semibold text-balance">
+                Scale your CPA firm without hiring a full-time COO.
+            </h1>
+            
+            <p class="mt-6 max-w-2xl text-xl text-slate-600">
+                Fractional COO leadership for CPA firms where growth has outpaced operations. 
+                Axiom helps managing partners improve leverage, eliminate bottlenecks, strengthen accountability, and turn revenue growth into margin growth.
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                <a href="#offerings" 
+                   class="inline-flex h-14 items-center justify-center rounded-3xl bg-slate-900 px-8 text-base font-semibold text-white shadow-sm hover:bg-black transition-all active:scale-[0.985]">
+                    Start a Scaling Sprint
+                </a>
+                <a href="#contact" 
+                   class="inline-flex h-14 items-center justify-center rounded-3xl border border-slate-300 bg-white px-8 text-base font-semibold text-slate-700 hover:bg-slate-50 transition-all">
+                    Book 30-Minute Strategy Call
+                </a>
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-x-8 gap-y-2 text-sm text-slate-600">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-600"></i>
+                    <span>4–8 week sprint or ongoing fractional COO support</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-600"></i>
+                    <span>Built for CPA and professional services firms</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-600"></i>
+                    <span>Florida-based | Available nationwide</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-screen-xl mx-auto px-6 pt-8 pb-16 border-t">
+        <div class="grid md:grid-cols-12 gap-x-12 items-start">
+            <div class="md:col-span-5">
+                <div class="sticky top-24">
+                    <img src="headshot.jpg" alt="Elias Espinal" class="headshot mb-8">
+
+                    <h2 class="font-display text-4xl tracking-tighter">Elias Espinal</h2>
+                    <p class="text-xl text-teal-800 font-medium mt-1">Founder, Axiom Advisory Partners</p>
+                    
+                    <div class="mt-3 text-sm text-slate-600">
+                        17+ years scaling operations inside CPA and professional services firms.
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="get-to-know-elias.html" 
+                           class="inline-flex items-center gap-x-2 text-sm font-semibold text-teal-800 hover:text-teal-900 group">
+                            Get to know Elias 
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-0.5 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 mt-12 md:mt-0">
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10">
+                    <h3 class="font-semibold text-lg tracking-tight mb-5">Why Axiom is different</h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <div class="font-semibold text-slate-900 mb-1.5">CPA firm operating experience</div>
+                            <p class="text-sm text-slate-600">Built from experience inside CPA and professional services firms, Axiom helps CPA firms strengthen the operating levers that turn growth into margin: leverage, capacity, workflow, realization, staffing, and accountability.</p>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900 mb-1.5">Direct diagnosis</div>
+                            <p class="text-sm text-slate-600">We identify the actual operating constraints quickly, separate symptoms from root causes, and give clear recommendations leadership can act on.</p>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900 mb-1.5">P&amp;L orientation</div>
+                            <p class="text-sm text-slate-600">Every engagement is tied to economics: leverage, utilization, realization, margin, capacity, pricing, and cash flow.</p>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-slate-900 mb-1.5">Practical execution</div>
+                            <p class="text-sm text-slate-600">The goal is not a binder of recommendations. The goal is an operating cadence, owner accountability, visible metrics, and decisions that actually get made.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badge moved here -->
+    <div class="max-w-screen-xl mx-auto px-6 pt-8">
+        <div class="inline-flex items-center gap-x-2 rounded-3xl bg-white px-4 py-1.5 text-xs font-semibold tracking-widest border border-slate-200">
+            <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span class="text-emerald-700">NOW ACCEPTING Q3 &amp; Q4 2026 ENGAGEMENTS</span>
+        </div>
+    </div>
+
+    <!-- SIGNATURE ENGAGEMENTS -->
+    <section id="why" class="bg-white border-y">
+        <div class="max-w-screen-xl mx-auto px-6 py-16">
+            <div class="max-w-2xl mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-semibold text-teal-700">SIGNATURE ENGAGEMENTS</div>
+                <h2 class="section-header tracking-tighter mt-2">Two ways to install operating discipline.</h2>
+                <p class="mt-3 text-lg text-slate-600">Start with a focused Scaling Sprint, or move directly into fractional COO support when the operating need is already clear.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Sprint Card -->
+                <div class="service-card border border-slate-200 bg-white rounded-3xl p-9 flex flex-col">
+                    <div class="flex-1">
+                        <div class="uppercase text-xs tracking-[1.5px] text-teal-700 font-semibold">MOST POPULAR ENTRY</div>
+                        <h3 class="font-display text-3xl tracking-tighter mt-3">Operational Scaling Sprint</h3>
+                        <p class="mt-4 text-slate-600">A 4–8 week engagement to diagnose where the firm is losing leverage, margin, capacity, and leadership time — then convert the findings into a practical 90-day operating roadmap.</p>
+
+                        <div class="mt-8">
+                            <div class="text-xs uppercase tracking-widest text-teal-700 mb-3">WHAT THE SPRINT DELIVERS</div>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>Managing partner day-to-day relief plan</span></li>
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>Service-line leverage and supervision model</span></li>
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>Workflow, scheduling, utilization, and review bottleneck diagnosis</span></li>
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>Client mix, pricing, realization, and low-value client framework</span></li>
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>Recruiting pipeline and near-term hiring priorities</span></li>
+                                <li class="flex gap-x-3"><i class="fa-solid fa-check text-teal-600 mt-1 w-3.5"></i> <span>90-day roadmap with owners, KPIs, cadence, and decision points</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-9 pt-6 border-t flex items-end justify-between">
+                        <div>
+                            <div class="text-xs text-teal-700">TYPICAL INVESTMENT</div>
+                            <div class="text-2xl font-semibold tracking-tight">Starting at $15k</div>
+                            <div class="text-xs text-slate-500">Most engagements $18k–$35k</div>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center justify-center rounded-2xl bg-slate-900 text-white px-6 py-3 text-sm font-semibold hover:bg-black transition">Start Sprint →</a>
+                    </div>
+                </div>
+
+                <!-- Retainer Card -->
+                <div class="service-card border border-slate-200 bg-white rounded-3xl p-9 flex flex-col">
+                    <div class="flex-1">
+                        <div class="uppercase text-xs tracking-[1.5px] text-teal-700 font-semibold">ONGOING EXECUTION</div>
+                        <h3 class="font-display text-3xl tracking-tighter mt-3">Fractional COO Retainer</h3>
+                        <p class="mt-4 text-slate-600">Ongoing COO-level support for firms that need weekly cadence, KPI accountability, leadership structure, and execution follow-through — without hiring a full-time executive.</p>
+
+                        <div class="mt-8 grid grid-cols-1 gap-y-6 text-sm">
+                            <div>
+                                <div class="font-semibold text-slate-900 mb-2">Scope includes:</div>
+                                <div class="grid grid-cols-1 gap-x-6 text-slate-600 text-[13px]">
+                                    <div>• Weekly leadership cadence</div>
+                                    <div>• Service-line capacity planning</div>
+                                    <div>• Recruiting and onboarding discipline</div>
+                                    <div>• Workflow and accountability rhythm</div>
+                                    <div>• Client/pricing action decisions</div>
+                                    <div>• Realization and cash-flow visibility</div>
+                                    <div>• M&amp;A integration support</div>
+                                    <div>• HRIS, performance, and people systems</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-auto pt-8 border-t flex items-end justify-between">
+                        <div>
+                            <div class="text-xs text-teal-700">RECOMMENDED START</div>
+                            <div class="text-2xl font-semibold tracking-tight">8–16 hours/week</div>
+                            <div class="text-xs text-slate-500">Recalibrated after 30–60 days</div>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold hover:bg-slate-50 transition">Discuss Retainer →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="max-w-screen-xl mx-auto px-6 py-16">
+        <div class="max-w-2xl mb-10">
+            <div class="uppercase tracking-[2px] text-xs font-semibold text-teal-700">PROOF, NOT PROMISES</div>
+            <h2 class="section-header tracking-tighter mt-2">Operating results built inside CPA and professional services firms.</h2>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-9 md:p-12">
+            <div class="grid md:grid-cols-12 gap-y-10">
+                <div class="md:col-span-5">
+                    <p class="text-slate-600">Axiom is led by Elias Espinal, a CPA firm operations leader with experience across Big Four, national, and regional professional services environments. His work has included scaling multi-office firms, improving leverage, supporting managing committees, implementing HRIS platforms, strengthening people operations, and leading acquisition integration.</p>
+                </div>
+
+                <div class="md:col-span-7">
+                    <div class="text-xs uppercase tracking-widest text-teal-700 mb-3">RESULTS FROM PRIOR ENGAGEMENTS</div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border border-slate-200 rounded-2xl p-6">
+                            <div class="text-xs text-slate-500">REVENUE GROWTH</div>
+                            <div class="mt-3 text-4xl font-semibold tracking-tighter">$44M → $151M</div>
+                            <div class="text-emerald-600 text-sm font-medium mt-1">Over 5 years for a top 20 firm</div>
+                        </div>
+                        <div class="border border-slate-200 rounded-2xl p-6">
+                            <div class="text-xs text-slate-500">LEVERAGE</div>
+                            <div class="mt-3 text-4xl font-semibold tracking-tighter">4.7:1 → 8.9:1</div>
+                            <div class="text-emerald-600 text-sm font-medium mt-1">Significant improvement in productive capacity</div>
+                        </div>
+                        <div class="border border-slate-200 rounded-2xl p-6">
+                            <div class="text-xs text-slate-500">MARGIN GROWTH</div>
+                            <div class="mt-3 text-4xl font-semibold tracking-tighter">$10M → $18M</div>
+                            <div class="text-emerald-600 text-sm font-medium mt-1">For a mid sized regional firm</div>
+                        </div>
+                        <div class="border border-slate-200 rounded-2xl p-6">
+                            <div class="text-xs text-slate-500">ACQUISITION &amp; INTEGRATION</div>
+                            <div class="mt-3 text-4xl font-semibold tracking-tighter">$3M</div>
+                            <div class="text-emerald-600 text-sm font-medium mt-1">Firm integrated into a larger practice</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="max-w-2xl mb-10">
+            <div class="uppercase tracking-[2px] text-xs font-semibold text-teal-700">HOW IT WORKS</div>
+            <h2 class="section-header tracking-tighter mt-2">A focused process built for busy managing partners.</h2>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl overflow-hidden">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b bg-slate-50">
+                        <th class="text-left px-8 py-5 font-semibold text-slate-600 w-1/4">PHASE</th>
+                        <th class="text-left px-8 py-5 font-semibold text-slate-600">WORK PERFORMED</th>
+                        <th class="text-left px-8 py-5 font-semibold text-slate-600 w-1/4">OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y text-slate-600">
+                    <tr>
+                        <td class="px-8 py-6 align-top font-semibold text-slate-900">Weeks 1–2<br><span class="font-normal text-xs text-slate-500">Discovery</span></td>
+                        <td class="px-8 py-6 text-[13px] leading-relaxed">Financial review, staffing &amp; org analysis, leadership interviews, client list &amp; WIP review, workflow/scheduling/utilization diagnosis, pricing &amp; BD assessment.</td>
+                        <td class="px-8 py-6 align-top text-xs font-medium text-teal-700">Interim findings memo + prioritized quick-win list</td>
+                    </tr>
+                    <tr>
+                        <td class="px-8 py-6 align-top font-semibold text-slate-900">Weeks 3–5<br><span class="font-normal text-xs text-slate-500">Design</span></td>
+                        <td class="px-8 py-6 text-[13px] leading-relaxed">Leadership solution design, service-line leverage model, recruiting plan, BD scorecard &amp; calendar, cash-flow improvement actions, 90-day roadmap drafting with stakeholders.</td>
+                        <td class="px-8 py-6 align-top text-xs font-medium text-teal-700">Draft 90-day operating roadmap</td>
+                    </tr>
+                    <tr>
+                        <td class="px-8 py-6 align-top font-semibold text-slate-900">Weeks 6–8+<br><span class="font-normal text-xs text-slate-500">Execution</span></td>
+                        <td class="px-8 py-6 text-[13px] leading-relaxed">Rollout of priority changes, acquisition/integration support if active, operating cadence installation, KPI tracking setup, and transition to ongoing fractional support if desired.</td>
+                        <td class="px-8 py-6 align-top text-xs font-medium text-teal-700">Final roadmap + fractional COO operating plan</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="px-8 py-5 bg-slate-900 text-white text-xs flex items-center gap-x-3">
+                <i class="fa-solid fa-info-circle text-teal-400"></i>
+                <span>The sprint can transition into a 90-day fractional COO engagement to implement the roadmap, protect momentum, and keep the leadership team aligned around the operating cadence.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual: In action with leadership teams -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-12">
+        <div class="relative">
+            <img src="elias-working.jpg" alt="Elias working alongside leadership teams" class="w-full rounded-3xl shadow-lg object-cover max-h-[420px]">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8 rounded-b-3xl">
+                <p class="text-white text-lg font-medium">Hands on operational guidance and support.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <section id="contact" class="bg-slate-900 text-white">
+        <div class="max-w-screen-xl mx-auto px-6 py-16 md:py-20">
+            <div class="max-w-2xl">
+                <h2 class="font-display text-5xl tracking-tighter">Ready to stop carrying the operating load?</h2>
+                <p class="mt-4 text-lg text-slate-300">Book a 30-minute strategy call. We’ll review your current growth goals, leverage, staffing constraints, workflow bottlenecks, and whether a Scaling Sprint or fractional COO engagement is the right next step. Direct conversation. No pitch deck.</p>
+            </div>
+
+            <div class="mt-10 grid md:grid-cols-2 gap-6 max-w-3xl">
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+                    <div class="text-sm font-semibold text-teal-400">DIRECT</div>
+                    <div class="mt-6 space-y-4 text-sm">
+                        <div>
+                            <div class="text-xs text-white/50">EMAIL</div>
+                            <a href="mailto:elias@axiomadvisorypartners.com" class="font-medium hover:text-teal-400 transition">elias@axiomadvisorypartners.com</a>
+                        </div>
+                        <div>
+                            <div class="text-xs text-white/50">LOCATION</div>
+                            <div class="font-medium">Florida</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col">
+                    <div class="text-sm font-semibold text-teal-400">PREFERRED</div>
+                    <div class="mt-auto">
+                        <div class="text-lg font-medium">Book a 30-min strategy call</div>
+                        <p class="text-sm text-white/60 mt-2">Direct scheduling. No forms or gatekeepers.</p>
+                        
+                        <a href="mailto:elias@axiomadvisorypartners.com?subject=Strategy%20Call%20Request%20-%20Axiom%20Advisory" 
+                           class="mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-white text-slate-900 h-12 text-sm font-semibold hover:bg-slate-100 transition">
+                            Book Strategy Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <img src="axiom-logo.png" alt="Axiom Advisory Partners" class="h-16 w-auto opacity-70">
+            </div>
+
+            <div class="mt-4 text-center text-xs text-white/40">
+                Axiom Advisory Partners LLC • Registered Florida • Serving ambitious CPA &amp; professional services firms nationwide
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (!btn || !menu) return;
+            
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                const icon = btn.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-times');
+                }
+            });
+            
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                });
+            });
+        }
+        
+        function setupSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href').substring(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const navHeight = 96;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - navHeight;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                });
+            });
+        }
+        
+        function init() {
+            setupMobileMenu();
+            setupSmoothScroll();
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>
